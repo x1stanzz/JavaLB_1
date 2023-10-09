@@ -3,7 +3,13 @@ package org.example;
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<Book> library = new ArrayList<>();
+    private ArrayList<Book> library;
+    public Library(){
+        library = new ArrayList<>();
+    }
+    public ArrayList<Book> getLibrary(){
+        return library;
+    }
     public void addBook(Book book){
         library.add(book);
     }
